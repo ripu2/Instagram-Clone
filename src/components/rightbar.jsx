@@ -11,6 +11,7 @@ class RightBar extends React.Component {
             className="Storyimg"
             src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
           />
+          <b style={{ 'margin-left': '2em' }}>4742 Ripu</b>
         </div>
         <div className="RightData" style={{ display: 'inline' }}>
           <div className="RightText" style={{ display: 'inline' }}>
