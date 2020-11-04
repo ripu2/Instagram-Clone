@@ -1,21 +1,26 @@
 import React from 'react';
 import Story from './Story';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import '../styles/app.css';
 class Content extends React.Component {
   render() {
     return (
-      <div classNames="Main">
-        <div class="ui card cards">
+      <>
+        <div class="ui card">
           <div class="content">
             <div class="right floated meta">14h</div>
-            <div className="box">
-              <div className="story">
-                <Story url="https://www.vexels.com/media/users//3/145908/raw/52eabf633ca6414e60a7677b0b917d92.jpg" />
-              </div>
-            </div>
-            <p>Ripu</p>
+            <img
+              class="ui avatar image"
+              src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
+            />
+            Elliot
           </div>
           <div class="image">
-            <img />
+            <img
+              className="Storyimg"
+              src="https://eternalarrival.com/wp-content/uploads/2020/07/Copy-of-Untitled-Design-3.jpg"
+            />
           </div>
           <div class="content">
             <span class="right floated">
@@ -31,7 +36,7 @@ class Content extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
