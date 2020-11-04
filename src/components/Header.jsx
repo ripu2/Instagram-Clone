@@ -30,17 +30,21 @@ class Header extends React.Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="#home">
-                  <i className=" home icon large"></i>
+                  <i className=" home icon big"></i>
                 </Nav.Link>
                 <Nav.Link href="#link">
-                  <i className=" fighter jet icon large"></i>
+                  <i className=" fighter jet icon big"></i>
                 </Nav.Link>
                 <Nav.Link href="#home">
-                  <i className=" compass outline icon large"></i>
+                  <i className=" compass outline icon big"></i>
                 </Nav.Link>
-                <Nav.Link href="#link">
-                  <div className="story">
-                    <Story url="https://www.vexels.com/media/users//3/145908/raw/52eabf633ca6414e60a7677b0b917d92.jpg" />
+
+                <Nav.Link className="headerLink" href="#link">
+                  <div className="HeaderImage">
+                    <img
+                      className="Storyimg"
+                      src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
+                    />
                   </div>
                 </Nav.Link>
               </Nav>
