@@ -11,7 +11,7 @@ import '../styles/app.css';
 class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar className="bar" fixed="top" bg="light" expand="lg">
         <Container>
           <Row>
             <Navbar.Brand href="#home">Instagram</Navbar.Brand>
@@ -33,12 +33,14 @@ class Header extends React.Component {
                   <i className=" home icon big"></i>
                 </Nav.Link>
                 <Nav.Link href="#link">
-                  <i className=" fighter jet icon big"></i>
+                  <i class="paper plane outline icon big"></i>
                 </Nav.Link>
                 <Nav.Link href="#home">
                   <i className=" compass outline icon big"></i>
                 </Nav.Link>
-
+                <Nav.Link href="#home">
+                  <i className=" heart outline icon big"></i>
+                </Nav.Link>
                 <Nav.Link className="headerLink" href="#link">
                   <div className="HeaderImage">
                     <img

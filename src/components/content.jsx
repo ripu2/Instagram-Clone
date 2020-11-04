@@ -4,30 +4,25 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import '../styles/app.css';
 class Content extends React.Component {
-  render() {
+  render(props) {
     return (
       <>
         <div class="ui card">
           <div class="content">
-            <div class="right floated meta">14h</div>
-            <img
-              class="ui avatar image"
-              src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg"
-            />
-            Elliot
+            <div class="right floated meta">{this.props.time}</div>
+            <img class="ui avatar image" src={this.props.user} />
+            {this.props.name}
           </div>
           <div class="image">
-            <img
-              className="Storyimg"
-              src="https://eternalarrival.com/wp-content/uploads/2020/07/Copy-of-Untitled-Design-3.jpg"
-            />
+            <img className="Storyimg" src={this.props.url} />
           </div>
           <div class="content">
             <span class="right floated">
-              <i class="heart outline like icon"></i>
-              17 likes
+              <i class="bookmark outline icon big"></i>
             </span>
-            <i class="comment icon"></i>3 comments
+            <i class="heart outline icon big"></i>
+            <i class="comment outline icon big"></i>
+            <i class="paper plane outline icon big"></i>
           </div>
           <div class="extra content">
             <div class="ui large transparent left icon input">
