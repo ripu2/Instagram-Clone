@@ -1,0 +1,66 @@
+.story {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 88%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+
+.story img {
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.story svg {
+  fill: none;
+  stroke: #8a3ab8;
+  stroke-width: 5px;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: loading 4500ms ease-in-out infinite alternate;
+}
+.Rightbox{
+    position: absolute !important;
+    left: 50% !important;
+    color: #cd476b;
+}
+.Recomendation {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    /* left: 88%; */
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .Recomendation img {
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Recomendation svg {
+    fill: none;
+    stroke: #8a3ab8;
+    stroke-width: 5px;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: loading 4500ms ease-in-out infinite alternate;
+  }
+@keyframes loading {
+  100% {
+    stroke: #cd476b;
+    stroke-dasharray: 10;
+    transform: rotate(250deg);
+  }
+}
